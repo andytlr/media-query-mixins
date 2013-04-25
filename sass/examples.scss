@@ -11,20 +11,26 @@
   border: 1px solid #dadada;
   height: 300px;
   color: #fff;
-    @include ltw(500px) {
+  @include ltw(500px) {
+    background: red;
+    &:before {
+      content: 'less than 500px wide';
+    }
     @include lth(500px) {
-      background: red;
       &:before {
         content: 'less than 500px tall and wide';
       }
     }
+  }
+  @include gtw(500px) {
+    background: blue;
+    &:before {
+      content: 'greater than 500px wide';
     }
-    @include gtw(500px) {
     @include gth(500px) {
-      background: red;
       &:before {
         content: 'greater than 500px tall and wide';
       }
     }
-    }
+  }
 }
