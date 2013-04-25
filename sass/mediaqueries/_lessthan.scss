@@ -1,8 +1,14 @@
 // Less Than
 // ********************************************
-// @include ltw(100px) {
+// @include lt(100px) {
 //   background: #fff;
 // }
+@mixin lt($width) {
+  @media only screen and (max-width: $width) {
+    @content;
+  }
+}
+
 @mixin ltw($width) {
   @media only screen and (max-width: $width) {
     @content;
