@@ -3,8 +3,9 @@
 // gem install sass
 // sass --watch sass:css --style expanded
 // ********************************************
-// Include the Media Queries Mixins file
-@import 'mediaqueries/mediaqueries';
+// Include the Media Queries Mixin files
+@import 'mediaqueries/greaterthan';
+@import 'mediaqueries/lessthan';
 // ********************************************
 
 .widget {
