@@ -1,0 +1,13 @@
+.widget {
+  border: 1px solid #dadada;
+}
+@media only screen and (min-width: 100px) {
+  .widget {
+    background: #000;
+  }
+}
+@media only screen and (max-width: 100px) {
+  .widget {
+    background: #fff;
+  }
+}

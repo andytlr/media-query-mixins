@@ -1,0 +1,10 @@
+// Greater Than
+// ********************************************
+// @include gt(100px) {
+//   background: #000;
+// }
+@mixin gt($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}

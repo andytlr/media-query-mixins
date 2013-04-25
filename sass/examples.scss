@@ -1,0 +1,18 @@
+// Media Query Mixins
+// ********************************************
+// gem install sass
+// sass --watch sass:css --style expanded
+// ********************************************
+// Include the Media Queries Mixins file
+@import 'mediaqueries/mediaqueries';
+// ********************************************
+
+.widget {
+  border: 1px solid #dadada;
+  @include gt(100px) {
+    background: #000;
+  }
+  @include lt(100px) {
+    background: #fff;
+  }
+}
