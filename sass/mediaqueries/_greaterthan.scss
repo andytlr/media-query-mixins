@@ -1,10 +1,16 @@
 // Greater Than
 // ********************************************
-// @include gt(100px) {
+// @include gtw(100px) {
 //   background: #000;
 // }
-@mixin gt($size) {
-  @media only screen and (min-width: $size) {
+@mixin gtw($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin gth($height) {
+  @media only screen and (min-height: $height) {
     @content;
   }
 }

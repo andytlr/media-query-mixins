@@ -9,10 +9,22 @@
 
 .widget {
   border: 1px solid #dadada;
-  @include gt(100px) {
-    background: #000;
-  }
-  @include lt(100px) {
-    background: #fff;
-  }
+  height: 300px;
+  color: #fff;
+    @include ltw(500px) {
+    @include lth(500px) {
+      background: red;
+      &:before {
+        content: 'less than 500px tall and wide';
+      }
+    }
+    }
+    @include gtw(500px) {
+    @include gth(500px) {
+      background: red;
+      &:before {
+        content: 'greater than 500px tall and wide';
+      }
+    }
+    }
 }
